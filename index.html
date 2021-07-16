@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>3 филиал</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="styles/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link type="text/css" rel="stylesheet" href="styles/swiper-bundle.min.css"  media="screen,projection"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body>
+    <header class="header">
+      <!-- Dropdown Structure -->
+      <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#!">Информация</a></li>
+        <li><a href="#!">Руководство</a></li>
+        <!--<li class="divider"></li>-->
+        <li><a href="#!">Вакансии</a></li>
+        <li><a href="#!">Документы</a></li>
+        <li><a href="#!">Охрана труда</a></li>
+        <li><a href="#!">Парковка</a></li>
+      </ul>
+      <ul id="dropdown2" class="dropdown-content">
+        <li><a href="#!">МГ ФОМС</a></li>
+        <li><a href="#!">Прием военнослужащих</a></li>
+        <!--<li class="divider"></li>-->
+        <li><a href="#!">Прием платных пациентов</a></li>
+        <li><a href="#!">Тарифы медицинских услуг</a></li>
+        <li><a href="#!">ТФ ОМС</a></li>
+      </ul>
+      <ul id="dropdown3" class="dropdown-content">
+        <li><a href="#!">Новости</a></li>
+        <li><a href="#!">СМИ о нас</a></li>
+        <!--<li class="divider"></li>-->
+        <li><a href="#!">Военно-медицинская газета</a></li>
+        <li><a href="#!">Фото</a></li>
+        <li><a href="#!">Контакты для СМИ</a></li>
+      </ul>
+      <ul id="dropdown4" class="dropdown-content">
+        <li><a href="#!">Адреса и телефоны</a></li>
+        <li><a href="#!">Схема проезда</a></li>
+      </ul>
+      <ul id="dropdown5" class="dropdown-content">
+        <li><a href="#!">График приема граждан</a></li>
+        <li><a href="#!">Противодействия коррупции</a></li>
+      </ul>
+      <nav class="nav">
+        <div class="nav-wrapper">
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <!-- Dropdown Trigger -->
+            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">О госпитале<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="#!">Поликлиника</a></li>
+            <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">Прием пациентов<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-trigger" href="#!" data-target="dropdown3">Пресс-центр<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-trigger" href="#!" data-target="dropdown4">Контакты<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-trigger" href="#!" data-target="dropdown5">Обращения граждан<i class="material-icons right">arrow_drop_down</i></a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Mobile-->
+      <!-- Dropdown Structure -->
+      <ul id="dropdown1_m" class="dropdown-content">
+        <li><a href="#!">Информация</a></li>
+        <li><a href="#!">Руководство</a></li>
+        <!--<li class="divider"></li>-->
+        <li><a href="#!">Вакансии</a></li>
+        <li><a href="#!">Документы</a></li>
+        <li><a href="#!">Охрана труда</a></li>
+        <li><a href="#!">Парковка</a></li>
+      </ul>
+      <ul id="dropdown2_m" class="dropdown-content">
+        <li><a href="#!">МГ ФОМС</a></li>
+        <li><a href="#!">Прием военнослужащих</a></li>
+        <!--<li class="divider"></li>-->
+        <li><a href="#!">Прием платных пациентов</a></li>
+        <li><a href="#!">Тарифы медицинских услуг</a></li>
+        <li><a href="#!">ТФ ОМС</a></li>
+      </ul>
+      <ul id="dropdown3_m" class="dropdown-content">
+        <li><a href="#!">Новости</a></li>
+        <li><a href="#!">СМИ о нас</a></li>
+        <!--<li class="divider"></li>-->
+        <li><a href="#!">Военно-медицинская газета</a></li>
+        <li><a href="#!">Фото</a></li>
+        <li><a href="#!">Контакты для СМИ</a></li>
+      </ul>
+      <ul id="dropdown4_m" class="dropdown-content">
+        <li><a href="#!">Адреса и телефоны</a></li>
+        <li><a href="#!">Схема проезда</a></li>
+      </ul>
+      <ul id="dropdown5_m" class="dropdown-content">
+        <li><a href="#!">График приема граждан</a></li>
+        <li><a href="#!">Противодействия коррупции</a></li>
+      </ul>
+      <ul class="sidenav" id="mobile-demo">
+        <!-- Dropdown Trigger -->
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1_m">О госпитале<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a href="#!">Поликлиника</a></li>
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown2_m">Прием пациентов<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown3_m">Пресс-центр<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown4_m">Контакты<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown5_m">Обращения граждан<i class="material-icons right">arrow_drop_down</i></a></li>
+      </ul>
+    </header>
+    <div class="container">
+      <div class="image-slider swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/1_slogan.uzkiy_.jpg">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/2_slogan.uzkiy_.jpg">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/3_slogan.uzkiy_.jpg">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/4_slogan.uzkiy_.jpg">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/5_slogan.uzkiy_.jpg">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/6_slogan.uzkiy_.jpg">
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="row">
+        <div class="col s12 m4 l6">
+          <div class="card medium">
+            <div class="card-image">
+              <img src="images/na_sayt_kartinka_k_tekstu.jpg">
+              <span class="card-title">С днём медицинского работника!</span>
+            </div>
+            <div class="card-content">
+              <p>Уважаемые коллеги! Дорогие друзья! День медицинского работника сегодня мы встречаем в очень непростое время, и это событие приобретает очертание иного порядка и наполняет большим глубоким содержанием уникальности, важности и незаменимости нашего служения профессии и людям.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4 l6">
+          <div class="card medium">
+            <div class="card-image">
+              <img src="images/img-20210611-wa0013.jpg">
+              <span class="card-title">60 лет назад ушел в вечность святитель Лука</span>
+            </div>
+            <div class="card-content">
+              <p>Престольный праздник, приуроченный 60-ой годовщине со дня смерти выдающегося ученого и богослова с мировым именем, архиепископа Симферопольского и Крымского Луки (в миру Валентин Феликсович Войно-Ясенецкий) состоялся в Храме святителя Луки, расположенном на территории 3 Центрального военного клинического госпиталя имени А.А. Вишневского.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4 l6">
+          <div class="card medium">
+            <div class="card-image">
+              <img src="images/low_1660.jpg">
+              <span class="card-title"> Военные врачи избавили пациента от камня на сердце</span>
+            </div>
+            <div class="card-content">
+              <p>Уникальную операцию по удалению панциря с сердца 37-летнего мужчины провели кардиохирурги Центрального военного клинического госпиталя имени А.А. Вишневского.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/swiper-bundle.min.js"></script>
+    <script>
+    new Swiper('.image-slider', {
+    pagination: {
+    el: '.swiper-pagination',
+    },
+    autoplay:{
+    delay: 4000,
+    stopOnLastSlide: false,
+    disableOnIteraction: false
+    }
+    });
+    </script>
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l3">
+            <img style="width: 180px;" src="images/ocenka.jpg">
+          </div>
+          <div class="col l3 s12">
+            <h5 class="white-text">Юридический адрес</h5>
+            <p class="grey-text text-lighten-4">
+              143420, Московская область,
+              городской округ Красногорск, п.Новый,
+              3 ЦВКГ им. А.А.Вишневского, д.1 <br>
+            e-mail: 3hospital@mil.ru</p>
+          </div>
+          <div class="col l3 s12">
+            <h5 class="white-text">Платные услуги</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="tel:+7(499)6455234">+7 (499) 645-52-34</a>
+              круглосуточно</li>
+            </ul>
+            <h5 class="white-text">Справочное бюро</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="tel:+7(495)5621274">+7 (495) 562-12-74</a>
+              ежедневно с 8.30 до 18.30</li>
+            </ul>
+          </div>
+          <div class="col l3">
+            <h5 class="white-text">Схема проезда</h5>
+            <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс.Карты</a><a href="https://yandex.ru/maps/?from=mapframe&ll=37.296710%2C55.807868&mode=usermaps&origin=jsapi_2_1_78&um=constructor%3A62967829d4d57f528647d1af7174491bd22c1cd56834e0d3ed19d1b31c8275ac&utm_medium=mapframe&utm_source=maps&z=14" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс.Карты — транспорт, навигация, поиск мест</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUezIA-9C" width="220" height="200" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          © 2021 ФГБУ «3 ЦВКГ им. А.А. Вишневского» Министерства обороны Российской Федерации
+          <a class="grey-text text-lighten-4 right" href="emailto:http://www.3hospital.ru/">Основной сайт</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
